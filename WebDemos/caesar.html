@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript IPO</h1>
+
+<p> dsafohodsaofhasdiohfkdusdfa bhInput:</p>
+
+<input id="in">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="out"></p>
+
+<script>
+function myFunction() {
+    var inVar, outVar;
+
+    // Input
+    inVar = document.getElementById("in").value;
+    
+    // Processing
+    outVar = "";
+	var position = 0;
+	while (position < 3) {
+		outVar = outVar + String.fromCharCode(inVar.charCodeAt(position) - 3);
+        position = position + 1;
+	}
+
+	// Output
+    document.getElementById("out").innerHTML = outVar;
+}
+</script>
