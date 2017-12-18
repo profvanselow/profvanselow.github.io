@@ -1,0 +1,370 @@
+.myIntro, .aboutMe, .text {
+	width: 65%;
+}
+
+#simpleModifier01 {
+				text-decoration: underline;
+				  }
+
+html {
+		padding:30px;
+	 }
+
+body {
+	background-image: url("Backgrounds/GradientWhite.png");
+	background-attachment: fixed;
+}
+
+#center1 {
+		text-align: center;
+		left: 500px;
+		}
+
+.title {
+	color: darkred;
+	text-align: center;
+	font-size: 70px;
+	font-family: Arial;
+	}
+
+	.info{
+	text-outline: solid;
+	outline-color: white;
+	font-family: Times New Roman;
+	}
+
+	#RULER {
+		color: black;
+		}
+	
+	.nav {
+		list-style-type: none;
+		padding: 10px 10px 10px 10px;
+		font-size:20px;
+		Font-family: Constantia;
+		text-align: center;
+		}
+		
+	.nav > li:hover {
+				background-color: grey;
+				cursor: pointer;
+				}
+		
+	.nav > li {
+				display: inline-block;
+				border:3px solid black;
+				padding: 10px 10px 10px 10px;
+				background-color: hsl(0, 60%, 50%);
+				line-height: 2em;
+				text-align: center;
+				}
+				
+	.nav > li > a {
+					text-decoration: none;
+					color: black;
+					}
+
+	.nav > li > a:hover {
+						color: Red;
+						}
+					
+#IDtemA{
+		color: black;
+		font-family: Times New Roman;
+		font-weight: bold;
+		border: 3px solid black;
+		height: 135px;
+		width: 430px;
+		background-color: hsl(0, 60%, 50%);
+	}
+	
+#IDtemB{
+		color: black;
+		font-family: Times New Roman;
+		font-weight: bold;
+		border: 3px solid black;
+		height: 230px;
+		width: 430px;
+		background-color: hsl(0, 60%, 50%);
+	}
+
+	#IMAGE-P1 {
+		position: absolute;
+		top: 460px;
+		right: 2%;
+		border: 3px solid black;
+		padding: 1px;
+		border-radius: 15px;
+		max-width: 400px;
+				}
+				
+
+	ul > h2 {
+		line-height: 0.00001em;
+		}
+	
+	ul > li {
+		font-size: 15px;
+   	   }
+	
+	
+	#int {
+			text-decoration: underline;
+		 }
+		 
+	#a-int {
+			border: solid hsl(0, 60%, 50%) 4px;
+			width: 600px;
+		   }
+	
+	#b-int {
+			text-decoration: underline;
+			}
+	
+	#FSX-pic1 {
+				position: relative;
+				border: 2px solid black;
+				width: 50%;
+				border-radius: 50px;
+				left: 270px;
+				}
+	
+	#YT1 {
+		position: relative;
+		border-radius: 100px; 
+		border: 2px solid black;
+		width: 9%;
+		border-radius: 100%;
+		left: 270px;
+		 }
+
+	#FB-icon {
+		position: relative;
+		border-radius: 100px; 
+		border: 2px solid black;
+		width: 8%;
+		border-radius: 100%;
+		left: 650px;
+				  }
+		 
+	#SM-1 > h3 {
+				text-decoration: underline;
+				}
+		
+	.HP > h2 {
+		text-decoration: underline;
+	}
+	
+	div > a {
+			text-decoration: underline;
+			}
+	
+	iframe {
+			display: block;
+			position: relative;
+			margin: 0 auto;
+			bottom: 10px;
+			
+			}
+	
+	#theFrame > h3 {
+				   text-align: center;
+				   line-height: 0.2em;
+				  }
+				  
+	#theFrame > h3 > a {
+						text-decoration: underline;
+					   }
+				  
+	#theFrame {
+				position: relative;
+				width: 40%;
+				Margin: 0 auto;
+				border: 5px solid black;
+				background-color: hsl(0, 60%, 50%);
+				max-width: 50%;
+				min-width:40%;
+			  }
+			  
+	#theFrame-2 > h3 {
+				   text-align: center;
+				   line-height: 0.2em;
+				  }
+				  
+	#theFrame-2 > h3 > a {
+						text-decoration: underline;
+					   }
+	#theFrame-2 > .desc1 {
+						text-align: center;
+						color: white;
+					   }
+				  
+	#theFrame-2 {
+				position: relative;
+				width: 48%;
+				left: 370px;
+				border: 5px solid black;
+				background-color: hsl(0, 60%, 50%);
+			  }
+	
+	#p-title {
+			 text-align: center;
+			 width: 100%;
+			 border: 0.5px solid black;
+			 background-color: lightgrey;			 
+			 }
+	
+	.myIntro > h3 {
+				text-decoration: underline;
+				}
+
+	.aboutMe > h3 {
+					text-decoration: underline;
+					}
+					
+	.HP-items > h3 {
+					text-decoration: underline;
+					}
+					
+								
+					
+					
+.profileCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.titleForCard {
+    color: grey;
+    font-size: 18px;
+}
+
+.cardButton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: hsl(0, 60%, 50%);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+	position: relative;
+	right: 13.4%;
+			}
+
+.cardButton:hover, a:hover {
+    opacity: 0.7;
+}
+
+.showcase {
+			text-decoration: underline;
+		  }
+
+#theDisplay {
+			font-size: 30px;
+			position: relative;
+			text-align: Center;
+			border: 3px solid black;
+			width: 15%;
+			Background-color: lightgrey;
+			margin: 0 auto;
+			}
+	   
+#theDisplayS {
+			font-size: 30px;
+			position: relative;
+			text-align: Center;
+			left: 10px;
+			border: 3px solid green;
+			width: 15%;
+			Background-color: lightgrey;
+			 }
+
+			 
+	  
+#report {
+		Position: relative;
+		background-color: red;
+		border: solid black 3px;
+		border-radius: 50%;
+		text-align: center;
+		margin: 0 auto;
+		width: 10%;
+		padding: 10px;
+		text-decoration: none;
+		color: black;		
+		}
+
+#report > a {
+		text-decoration: none;
+		color: black;
+			}
+		
+#report:hover {
+			background-color: White;
+			  }
+
+#linkd {
+	color: red;
+	   }
+
+#C-link	{
+	text-decoration: none;
+	color: black;
+		}   
+	   
+video {
+		position: relative;
+		width:80%;
+		left: 10%;
+		border: 5px solid black;
+		background-color: hsl(0, 60%, 50%);
+	 }
+	 
+p {
+text-indent: 40px;	 
+  }
+  
+  /*LiveLINK is a simple modifier for the link to linkedin found in social media*/
+  
+ #liveLINK > a {
+			font-size: 25px;
+			padding: 3px;
+			border: 3px solid black;
+			width: 15%;
+			padding: 8px;
+			text-decoration: none;
+			color: black;
+			background-color: red;
+				}
+				
+#liveLINK > a:hover {
+					background-color: white;
+					color: black;
+					
+					}
+					
+.linkedinTITLE {
+				text-decoration: underline;
+			   }
+	
+
+/*LI-id is a modifier for a linkedin icon found in the social media link*/	
+#LI-id {
+	outline: 1px solid black;
+		}
+
+/*This .mod is a simple modifier for any paragraphs that I choose to make more visible*/		
+.mod {
+	font-size: 20px;
+	}
+	
+.article {
+		text-decoration: underline;
+		text-align: center;
+		
+		}
