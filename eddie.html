@@ -1,0 +1,97 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="style1.css" type="text/css" rel="stylesheet" />
+
+<head>
+	<meta charset="utf-8"/>
+	<title id="tabStyle">Home Page</title>
+	<link href="Icons/Plane-Icon-RAW.png" type="image/ico" rel="icon" />
+	
+	<script>
+	function displayTheRealTime() {
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = today.getSeconds();
+		m = checkTime(m);  // These are in minutes
+		s = checkTime(s); //These are in seconds
+		document.getElementById('theDisplay').innerHTML = "Time: " + 
+		h + ":" + m + ":" + s;
+		var t = setTimeout(displayTheRealTime, 500);
+						 };
+	function checkTime(i) {
+		if (i < 10) {i = "0" + i};  // add zero in front of numbers that are less than 10
+		return i;
+						  };
+	</script>
+	
+</head>
+<body onload="displayTheRealTime()">
+	
+	<h1 class="title">My Personal Web Page</h1>
+	
+	<ul class="nav">
+		<li><a href="Home-Page.html"><strong>Home</strong></a></li>
+		<li><a href="Hobby-Page.html"><strong>Hobby</strong></a></li>
+		<li><a href="Social-Media-Page.html"><strong>Social Media</strong></a></li>
+		<li><a href="Job-Resume.html"><strong>Job Resume</strong></a></li>
+		<li><a href="Programs-Page.html"><strong>Programs Page</strong></a></li>
+		<li><a href="Usability.html"><strong>Usability</strong></a></li>
+	</ul>
+	<h1 id="p-title">HOME</h1>
+	<div id="theDisplay"></div>
+	<br/>
+	<div class="profileCard">
+		<img src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-0/p206x206/12345579_1619975401584642_3869455561546481405_n.jpg?oh=9da45922118feaa3aab8a7fc504244d3&oe=5A6B03E3" 			alt="Image of Eddie Andino" style="width:100%">
+		<h1>Eddie L. Andino</h1>
+		<p class="titleForCard">Software Engineering Student</p>
+		<p>Florida Gulf Coast University</p>
+		<p><button class="cardButton"><a id="C-link" href="External-HTML.html" target="_blank">Test Contact Button</a></button></p>
+	</div>
+
+	<div>
+		<h3>Intro:</h3>
+		<p class="myIntro">	Welcome to my custom made website, in here you will find a little bit of information about me, some of my life
+		experiences, things of interest, activities, hobbies, movies and so on. You also might encounter a few of my own programmed
+		projects that I make myself do. Any little thing I come up with I might upload into a separate page so that you guys (the readers)
+		have an opportunity to see my creations if you wish. I might even link up my YouTube account in here so that you guys can see some of my
+		videos, which are basically recorded game-play of me flying simulators. Thats another thing, I love flying, it has become an addiction
+		of mine in the past 14 years.
+		</p>
+	</div>
+	
+	<div>
+		<h3>About me:</h3>
+			<p class="aboutMe">
+				Hey there, my name is Eddie L. Andino (Sounds a bit weird when I introduce myself by including my middle initial L. which stands for Lazaro) I was born
+			in May 5th, 1997. Currently as I write this page section I am 20 years old and in third year of college, first year in FGCU. As you can probably tell because
+			of this page I programmed myself, I am studying for a degree in computer Software Engineering. Once I complete my degree, I plan to major in a more specific
+			area of software. Those are my long term goals that I write about on this site. Before I started at FGCU, I was in Florida SouthWestern State College (FSW) and
+			I took some classes in there and I also got my first job there as a math tutor in the math center, I worked there for about a year until I switched to FGCU and
+			now I am working in the math center here at this school. It is a fun job, you get to help people, and you get to know them. Aside from that, I have a few
+			hobbies that I can talk about in here, and one of those is flying, I absolutely love flying. I am currently working on my Private Pilot License (PPL) and I
+			have some hours and money invested into it already. This leads to my other hobby, flight simulators such as Flight Simulator X also get a tight hold of my
+			attention.
+			</P>
+	</div>
+	
+	<hr size="2" color="black" />
+	
+	<br/>
+	
+	<h3 class="article">My Computer Science Article</h3>
+	<h2 id="report" href="Field-Report.pdf" target="_blank" ><a href="Field-Report.pdf" target="_blank">Article</a></h2>
+	
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
