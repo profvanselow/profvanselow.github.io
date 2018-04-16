@@ -1,45 +1,42 @@
-<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang=en>
 <head>
-<script>
-
-function setCookie(cname,cvalue,exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
-function checkCookie() {
-    var user=getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
-    } else {
-       user = prompt("Please enter your name:","");
-       if (user != "" && user != null) {
-           setCookie("username", user, 30);
-       }
-    }
-}
-
-</script>
+<meta charset=utf-8>
+<title>Prof. Vanselow Home Page</title>
 </head>
-<body onload="checkCookie()">
+<body>
+
+<div><strong><br /> Prof. Scott Vanselow<br /> </strong><em>Computer Scientist / Programmer / Student Success Professor<br /> </em></div>
+<p><em>8099 College Pkwy<br /> </em></p>
+<div><em><a href="mailto:profvanselow@gmail.com">profvanselow@gmail.com</a><br /> <br /> <br /> </em>
+<table border="0" cellspacing="0">
+<tbody>
+<tr>
+<td>&nbsp;<a href="https://plus.google.com/108551331695975496280/posts"><img src="https://sites.google.com/site/profvanselow/Home/google-plus-pages-logo2.png" alt="Google Plus icon" border="0" /></a>
+</td>
+<td><a href="http://www.linkedin.com/pub/scott-vanselow/76/32b/bb5"><img src="https://sites.google.com/site/profvanselow/Home/linkedin.png" alt="" border="0" /></a></td>
+<td><a href="https://www.facebook.com/pages/Prof-Scott-Vanselow/206648632691926"><img src="https://sites.google.com/site/profvanselow/Home/imagesCALJ52OD.jpg" alt="" border="0" /></a></td>
+<td>
+<div><img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BGoogle+Gadget'%3D20'f%5Cv'a%5C%3D0'10'%3D449'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B%22Include+gadget+(iframe)%22'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D450'%3D77'dim'%5C%3D10'%3D10'%3D450'%3D77'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=eOvCeaSXbXgdgEb7VNDhGymvDqA" alt="" width="450" height="80" data-igsrc="http://75.gmodules.com/ig/ifr?mid=75&amp;synd=trogedit&amp;url=http%3A%2F%2Fwww.gstatic.com%2Fsites-gadgets%2Fiframe%2Fiframe.xml&amp;up_iframeURL=%2F%2Fwww.facebook.com%2Fplugins%2Flike.php%3Fhref%3Dhttps%253A%252F%252Fwww.facebook.com%252Fprofvanselow%26send%3Dfalse%26layout%3Dstandard%26width%3D450%26show_faces%3Dtrue%26action%3Dlike%26colorscheme%3Dlight%26font%26height%3D80%26appId%3D2336420662&amp;up_scroll=no&amp;h=80&amp;w=450" data-type="ggs-gadget" data-props="align:left;borderTitle:Include gadget (iframe);height:80;igsrc:http#58//75.gmodules.com/ig/ifr?mid=75&amp;synd=trogedit&amp;url=http%3A%2F%2Fwww.gstatic.com%2Fsites-gadgets%2Fiframe%2Fiframe.xml&amp;up_iframeURL=%2F%2Fwww.facebook.com%2Fplugins%2Flike.php%3Fhref%3Dhttps%253A%252F%252Fwww.facebook.com%252Fprofvanselow%26send%3Dfalse%26layout%3Dstandard%26width%3D450%26show_faces%3Dtrue%26action%3Dlike%26colorscheme%3Dlight%26font%26height%3D80%26appId%3D2336420662&amp;up_scroll=no&amp;h=80&amp;w=450;mid:75;scrolling:no;showBorder:false;showBorderTitle:null;spec:http#58//www.gstatic.com/sites-gadgets/iframe/iframe.xml;up_iframeURL://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofvanselow&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80&amp;appId=2336420662;up_scroll:no;view:default;width:450;" /></div>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /><em><br /> </em></div>
+<div><em><strong>BRIEF BIO</strong><br /> </em></div>
+<p><br /> I am Professor Vanselow (pronounced "van sell oh"). <br /> I am a graduate of Rollins College in Winter Park, FL with a major in Economics and a minor in Computer Science. <br /> I earned a Master's Degree in Management Information Systems from Florida Gulf Coast University. <br /> I have several industry <a href="https://sites.google.com/site/profvanselow/portfolio/professional-development/certifications">certifications</a>. <br /> I have worked as a desktop technician, programmer, systems engineer, and network technician for a brokerage firm at the Chicago Board of Trade and the Pacific Stock Exchange. I have also worked in I.T. at Edison State College doing technology training, web programming, and systems administration. I continue to write programs, create web sites, and provide technology solutions as a freelancer. I have taught at the undergraduate and graduate level at FGCU and I have been teaching face to face, online, and blended classes at Edison/FSW since 2007. <br /> I am originally from Chicago and am a Bears and Cubs fan. <br /> </p>
+<hr />
+<p dir="ltr"><em><strong>TEACHING PHILOSOPHY</strong></em></p>
+<p>The goal of my teaching is to provide students with tools to improve their lives, and the world. I aim to design experiences that lead to discovery of the conceptual material. I don&rsquo;t teach by telling, I strive to create conditions that inspire students to learn. (Finkel)<br /> <br /> My teaching philosophy is influenced by the fact that I teach technology related subjects and technology is constantly evolving. Many books are outdated the day they are published. This has influenced my teaching philosophy and practice in several ways. First, as much as possible, I focus on overall concepts, not just the current method of implementation. Second, I supplement textbook material with more current information. Lastly, in addition to teaching about certain topics or how to do something, when possible, I teach strategies students can take to learn more about certain topics or how to find out how to do something. I emphasize effective Internet search techniques and web site evaluations in all classes.<br /> <br /> My teaching philosophy is also influenced by the possibilities created by technology. I have taken to heart the flipped classroom philosophy of Salman Khan, among others. It does not make sense in this technological age for a teacher to stand in front of a classroom full of students with different skills and learning styles and deliver a lecture. This could more easily and effectively be delivered in a video recording. I prefer to create learning resources that the student can engage in at their convenience and then deliver personalized just-in-time teaching as students do their &ldquo;home&rdquo; work in class meetings. <br /> <br /> Another influence of my teaching philosophy is the Knowles' theory of andragogy. Specifically, I agree with the assumptions that (1) Adults need to know why they need to learn something (2) Adults need to learn experientially, (3) Adults approach learning as problem-solving, and (4) Adults learn best when the topic is of immediate value. I try to stay mindful of these assumptions and teach accordingly. <br /> <br /> My philosophy with the networking and hardware courses is to do as many hands‐on activities as possible. Anyone anywhere can read a textbook and answer questions. The real value to the students in these courses is the availability of a lab, along with the guidance of an experienced instructor, so they can learn by doing. I present some broad concepts and the goal of an activity but purposely don&rsquo;t offer step by step details. I like to see how the students go about figuring out what to do. If or when they need me to, I step in and provide them with hints or direct assistance. It is more important that they can figure out how to go about figuring out what to do than <br /> <br /> My philosophy with introductory programming classes is that I am not expecting all of the students to go on to be full‐time professional programmers. Without a doubt, however, some of them will go on to do some sort of programming in the future. In addition, 100% of them will need to use problem solving skills, creative thinking, and research techniques. For these reasons, I am most concerned with those aspects of the course. It is more important to me that students learn to think like a programmer than to solve a particular problem.&nbsp;</p>
+<p>To paraphrase Ralph Waldo Emerson, In my classes, every student I meet is my superior in some way, and in that I learn from them.</p>
+<p><br /> </p>
+<hr />
+<div dir="ltr">
+<div>
+<div><em><br /> </em></div>
+</div>
+</div>
 </body>
 </html>
