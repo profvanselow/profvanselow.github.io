@@ -15,27 +15,15 @@
   <p>&lt;embed src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://profvanselow.github.io/WebDemos/fields.pdf" width="500" height="375"&gt;</p>
   <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://profvanselow.github.io/WebDemos/fields.pdf" width="1500" height="375">
 
-  <button id="getp">Get Paragraph Width</button>
+  
 <button id="getd">Get Document Width</button>
-<button id="getw">Get Window Width</button>
-<div>&nbsp;</div>
-<p>
-  Sample paragraph to test width
-</p>
+
  
 <script>
-function showWidth( ele, w ) {
-  $( "div" ).text( "The width for the " + ele + " is " + w + "px." );
-}
-$( "#getp" ).click(function() {
-  showWidth( "paragraph", $( "p" ).width() );
-});
 $( "#getd" ).click(function() {
   showWidth( "document", $( document ).width() );
 });
-$("#getw").click(function() {
-  showWidth( "window", $( window ).width() );
-});
+
 </script>
   
   </body>
