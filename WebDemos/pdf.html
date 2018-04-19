@@ -4,6 +4,7 @@
 <meta charset=utf-8>
 <title>Adding a PDF</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
   <p>Method 1:</p>
@@ -13,5 +14,29 @@
   <p>Method 2: </p>   
   <p>&lt;embed src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://profvanselow.github.io/WebDemos/fields.pdf" width="500" height="375"&gt;</p>
   <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://profvanselow.github.io/WebDemos/fields.pdf" width="1500" height="375">
-</body>
+
+  <button id="getp">Get Paragraph Width</button>
+<button id="getd">Get Document Width</button>
+<button id="getw">Get Window Width</button>
+<div>&nbsp;</div>
+<p>
+  Sample paragraph to test width
+</p>
+ 
+<script>
+function showWidth( ele, w ) {
+  $( "div" ).text( "The width for the " + ele + " is " + w + "px." );
+}
+$( "#getp" ).click(function() {
+  showWidth( "paragraph", $( "p" ).width() );
+});
+$( "#getd" ).click(function() {
+  showWidth( "document", $( document ).width() );
+});
+$("#getw").click(function() {
+  showWidth( "window", $( window ).width() );
+});
+</script>
+  
+  </body>
 </html>
