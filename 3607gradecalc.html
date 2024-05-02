@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <label for="inputB5">B5:</label>
+    <input type="number" id="inputB5"><br>
+    <label for="inputB4">B4:</label>
+    <input type="number" id="inputB4"><br>
+    <label for="inputB2">B2:</label>
+    <input type="number" id="inputB2"><br>
+    <label for="inputB3">B3:</label>
+    <input type="number" id="inputB3"><br>
+    <label for="inputB6">B6:</label>
+    <input type="number" id="inputB6"><br>
+    <label for="inputB7">B7:</label>
+    <input type="number" id="inputB7"><br>
+    <label for="inputB1">B1:</label>
+    <input type="number" id="inputB1"><br>
+    <button onclick="calculateGrade()">Calculate</button><br>
+    <p id="result"></p>
+
+    <script>
+        function calculateGrade() {
+            var B5 = parseFloat(document.getElementById("inputB5").value);
+            var B4 = parseFloat(document.getElementById("inputB4").value);
+            var B2 = parseFloat(document.getElementById("inputB2").value);
+            var B3 = parseFloat(document.getElementById("inputB3").value);
+            var B6 = parseFloat(document.getElementById("inputB6").value);
+            var B7 = parseFloat(document.getElementById("inputB7").value);
+            var B1 = parseFloat(document.getElementById("inputB1").value);
+
+            var result;
+
+            if (B5 >= 70 && B4 >= 70 && B2 >= 70 && B3 >= 70 && B6 >= 70 && (B7 >= 70 || B1 >= 70)) {
+                result = "A";
+            } else if (B5 >= 70 && B4 >= 70 && (B2 >= 70 || B3 >= 70) && B6 >= 70 && (B7 >= 70 || B1 >= 70)) {
+                result = "B";
+            } else if (B5 >= 70 && B4 >= 70 && B2 >= 70 && B3 >= 70 && (B6 >= 60 || B7 >= 60)) {
+                result = "B";
+            } else if (B6 >= 70 && B1 >= 70) {
+                result = "C";
+            } else if (B5 >= 70 && B4 >= 70 && B6 >= 70 && B7 >= 70) {
+                result = "C";
+            } else if (B5 >= 70 && B4 >= 70 && (B2 >= 70 || B3 >= 70) && B6 >= 60 && B7 >= 60) {
+                result = "C";
+            } else if (B6 >= 60 && B7 >= 60) {
+                result = "D";
+            } else {
+                result = "F";
+            }
+
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
